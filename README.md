@@ -1,4 +1,3 @@
-
 # ✈️ AeroGrid - Full-Stack Airline Reservation System
 
 AeroGrid is a complete, full-stack web application for booking and managing flights, built with a **Spring Boot backend** and an **Angular frontend**.
@@ -20,7 +19,7 @@ It features a secure, role-based system that provides distinct interfaces for **
 
 * Publicly accessible **flight search** (by source, destination, and date).
 * Secure **flight booking** for authenticated users.
-* A **My Bookings** page to view user flight history.
+* A **My Bookings** page to view flight history.
 
 ### 🔒 Security
 
@@ -35,7 +34,7 @@ It features a secure, role-based system that provides distinct interfaces for **
 ### Backend
 
 * Java & Spring Boot
-* Spring Security + JWT (authentication & authorization)
+* Spring Security + JWT
 * Spring Data JPA + Hibernate
 * MySQL Database
 
@@ -49,14 +48,14 @@ It features a secure, role-based system that provides distinct interfaces for **
 
 ## 🗃️ Database Schema
 
-The application uses a relational database with the following **core entities**:
+The application uses the following **core entities**:
 
-* **User:** Stores user credentials and roles.
-* **Role:** Defines permissions (`ROLE_USER`, `ROLE_ADMIN`).
-* **Airport:** Airport details (code, name, city, country).
-* **Aircraft:** Aircraft details (model, capacity).
-* **Flight:** Links source airport, destination airport, and aircraft.
-* **Booking:** Connects a user to a flight.
+* **User** → Stores credentials and roles
+* **Role** → Defines permissions (`ROLE_USER`, `ROLE_ADMIN`)
+* **Airport** → Code, name, city, country
+* **Aircraft** → Model and capacity
+* **Flight** → Links source, destination, aircraft
+* **Booking** → Connects a user to a flight
 
 ---
 
@@ -64,18 +63,18 @@ The application uses a relational database with the following **core entities**:
 
 ### 🔑 Authentication API
 
-* `POST /api/auth/register` → Register a new user.
-* `POST /api/auth/login` → Authenticate and receive JWT.
+* `POST /api/auth/register` → Register a new user
+* `POST /api/auth/login` → Authenticate and receive JWT
 
 ### 🌍 Public API
 
-* `GET /api/flights/search` → Search available flights.
-* `GET /api/flights/airports` → Fetch all airports.
+* `GET /api/flights/search` → Search flights
+* `GET /api/flights/airports` → List airports
 
 ### 👤 User API (Requires `ROLE_USER`)
 
-* `POST /api/bookings` → Create a new booking.
-* `GET /api/bookings/my` → Get logged-in user’s bookings.
+* `POST /api/bookings` → Create booking
+* `GET /api/bookings/my` → Get user’s bookings
 
 ### 🛠️ Admin API (Requires `ROLE_ADMIN`)
 
@@ -87,31 +86,32 @@ The application uses a relational database with the following **core entities**:
 
 ## 📸 Screenshots
 
-### 🔐 Authentication
+### 📝 Register
 
-![Login & Register](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Login.png)
+![Register](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/register.png)
 
-### 🛫 Airports Management
+### 🔐 Login
 
-![Airports CRUD](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Airports.png)
+![Login](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/login.png)
+
+### 🛫 Airport Management
+
+![Airports](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/airport.png)
 
 ### ✈️ Aircraft Management
 
-![Aircraft CRUD](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Aircraft.png)
+![Aircraft](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/aircraft.png)
 
-### 🗓️ Schedule Flights
+### 🗓️ Flight Management
 
-![Schedule Flight](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Schedule_flight.png)
+![Flight Management](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Schedule_flight.png)
 
-### 🔍 Search Flights
+### 🔍 Flight Search
 
-![Flight Search](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Search.png)
+![Search Flights](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/search_flight.png)
 
 ### 🎟️ My Bookings
 
-![Bookings](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Bookings.png)
+![Bookings](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/bookings.png)
 
 ---
-
-
-👉 Do you want me to also write a **step-by-step Setup Guide** (clone, backend run, frontend run) section for the README so others can run it easily?
