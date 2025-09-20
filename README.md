@@ -1,3 +1,4 @@
+
 # ✈️ AeroGrid - Full-Stack Airline Reservation System
 
 AeroGrid is a complete, full-stack web application for booking and managing flights, built with a **Spring Boot backend** and an **Angular frontend**.
@@ -88,15 +89,15 @@ The application uses a relational database with the following **core entities**:
 
 ### 🔐 Authentication
 
-![Login & Register](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/commit/e10cd31bdfb5fd36aa3d9e825219d980b80388f3)
+![Login & Register](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Login.png)
 
 ### 🛫 Airports Management
 
-![Airports CRUD](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/commit/e10cd31bdfb5fd36aa3d9e825219d980b80388f3)
+![Airports CRUD](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Airports.png)
 
 ### ✈️ Aircraft Management
 
-![Aircraft CRUD](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/commit/e10cd31bdfb5fd36aa3d9e825219d980b80388f3)
+![Aircraft CRUD](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Aircraft.png)
 
 ### 🗓️ Schedule Flights
 
@@ -104,10 +105,13 @@ The application uses a relational database with the following **core entities**:
 
 ### 🔍 Search Flights
 
-![Flight Search](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/commit/e10cd31bdfb5fd36aa3d9e825219d980b80388f3)
+![Flight Search](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Search.png)
 
 ### 🎟️ My Bookings
 
-![Bookings](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/commit/e10cd31bdfb5fd36aa3d9e825219d980b80388f3)
+![Bookings](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Bookings.png)
 
 ---
+
+
+👉 Do you want me to also write a **step-by-step Setup Guide** (clone, backend run, frontend run) section for the README so others can run it easily?
