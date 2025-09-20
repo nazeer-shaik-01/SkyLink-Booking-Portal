@@ -1,9 +1,3 @@
-Perfect 👍 Let’s polish your `README.md` with **professional structure, clear sections, and ordered screenshots with headings**.
-
-Here’s a final version you can copy into your project:
-
----
-
 # ✈️ AeroGrid - Full-Stack Airline Reservation System
 
 AeroGrid is a complete, full-stack web application for booking and managing flights, built with a **Spring Boot backend** and an **Angular frontend**.
@@ -117,7 +111,3 @@ The application uses a relational database with the following **core entities**:
 ![Bookings](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/commit/e10cd31bdfb5fd36aa3d9e825219d980b80388f3)
 
 ---
-
-✅ This way, your `README.md` looks **clean, professional, and visually structured** with features, APIs, and screenshots in order.
-
-Do you also want me to add a **setup guide (installation & run instructions)** so new developers can run the project easily?
