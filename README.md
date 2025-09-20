@@ -19,7 +19,7 @@ It features a secure, role-based system that provides distinct interfaces for **
 
 * Publicly accessible **flight search** (by source, destination, and date).
 * Secure **flight booking** for authenticated users.
-* A **My Bookings** page to view flight history.
+* A **My Bookings** page to view user flight history.
 
 ### 🔒 Security
 
@@ -34,7 +34,7 @@ It features a secure, role-based system that provides distinct interfaces for **
 ### Backend
 
 * Java & Spring Boot
-* Spring Security + JWT
+* Spring Security + JWT (authentication & authorization)
 * Spring Data JPA + Hibernate
 * MySQL Database
 
@@ -48,14 +48,14 @@ It features a secure, role-based system that provides distinct interfaces for **
 
 ## 🗃️ Database Schema
 
-The application uses the following **core entities**:
+The application uses a relational database with the following **core entities**:
 
-* **User** → Stores credentials and roles
-* **Role** → Defines permissions (`ROLE_USER`, `ROLE_ADMIN`)
-* **Airport** → Code, name, city, country
-* **Aircraft** → Model and capacity
-* **Flight** → Links source, destination, aircraft
-* **Booking** → Connects a user to a flight
+* **User:** Stores user credentials and roles.
+* **Role:** Defines permissions (`ROLE_USER`, `ROLE_ADMIN`).
+* **Airport:** Airport details (code, name, city, country).
+* **Aircraft:** Aircraft details (model, capacity).
+* **Flight:** Links source airport, destination airport, and aircraft.
+* **Booking:** Connects a user to a flight.
 
 ---
 
@@ -63,18 +63,18 @@ The application uses the following **core entities**:
 
 ### 🔑 Authentication API
 
-* `POST /api/auth/register` → Register a new user
-* `POST /api/auth/login` → Authenticate and receive JWT
+* `POST /api/auth/register` → Register a new user.
+* `POST /api/auth/login` → Authenticate and receive JWT.
 
 ### 🌍 Public API
 
-* `GET /api/flights/search` → Search flights
-* `GET /api/flights/airports` → List airports
+* `GET /api/flights/search` → Search available flights.
+* `GET /api/flights/airports` → Fetch all airports.
 
 ### 👤 User API (Requires `ROLE_USER`)
 
-* `POST /api/bookings` → Create booking
-* `GET /api/bookings/my` → Get user’s bookings
+* `POST /api/bookings` → Create a new booking.
+* `GET /api/bookings/my` → Get logged-in user’s bookings.
 
 ### 🛠️ Admin API (Requires `ROLE_ADMIN`)
 
@@ -88,30 +88,31 @@ The application uses the following **core entities**:
 
 ### 📝 Register
 
-![Register](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/register.png)
+![Register](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/Register_page.png)
 
 ### 🔐 Login
 
-![Login](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/login.png)
+![Login](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/Login_page.png)
 
-### 🛫 Airport Management
+### 🛫 Manage Airports
 
-![Airports](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/airport.png)
+![Airports](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/Manage_airport.png)
 
-### ✈️ Aircraft Management
+### ✈️ Manage Aircraft
 
-![Aircraft](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/aircraft.png)
+![Aircraft](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/Manage_aircraft.png)
 
-### 🗓️ Flight Management
+### 🗓️ Schedule Flights
 
-![Flight Management](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/Schedule_flight.png)
+![Schedule Flights](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/Schedule_flight.png)
 
-### 🔍 Flight Search
+### 🔍 Search Flights
 
-![Search Flights](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/search_flight.png)
+![Search Flights](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/Search_flight.png)
 
 ### 🎟️ My Bookings
 
-![Bookings](https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal/blob/main/airline-frontend/airline-frontend/pics/bookings.png)
+![Bookings](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/My_bookings.png)
 
 ---
+
