@@ -1,6 +1,7 @@
-# ✈️ AeroGrid - Full-Stack Airline Reservation System
 
-AeroGrid is a complete, full-stack web application for booking and managing flights, built with a **Spring Boot backend** and an **Angular frontend**.
+# ✈️ SkyLink-Booking-Portal - Full-Stack Airline Reservation System
+
+SkyLink-Booking-Portal is a complete, full-stack web application for booking and managing flights, built with a **Spring Boot backend** and an **Angular frontend**.
 It features a secure, role-based system that provides distinct interfaces for **public users** and **administrators**.
 
 ---
@@ -115,4 +116,3 @@ The application uses a relational database with the following **core entities**:
 ![Bookings](https://raw.githubusercontent.com/nazeer-shaik-01/SkyLink-Booking-Portal/main/airline-frontend/airline-frontend/pics/My_bookings.png)
 
 ---
-
